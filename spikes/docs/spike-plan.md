@@ -11,6 +11,7 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 1: SLM Inference Framework Setup
 **Goal**: Get familiar with running vision models locally
+**Framework**: Ollama (easiest setup, focus on learning)
 
 **Tasks**:
 - Install and configure Ollama
@@ -22,11 +23,17 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 2: Vision Understanding Evaluation
 **Goal**: Compare vision models' ability to understand web screenshots
+**Framework**: Ollama (easy model switching for comparison)
 
 **Models to Test**:
 - Phi-3.5-Vision (4.2B)
 - LLaVA-Next-7B
 - LLaVA-Next-13B (if performance allows)
+- Llama 3.2-Vision 11B (if available)
+- MiniCPM-V 2.6 (efficiency focused)
+- CogVLM2 (GUI specialist)
+- InternVL 2.5 (vision benchmark leader)
+- LLaVA-OneVision (latest iteration)
 
 **Test Scenarios**:
 - Simple web pages (login forms, buttons, menus)
@@ -38,6 +45,7 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 3: Tool Calling & Structured Output
 **Goal**: Evaluate models' ability to generate structured actions
+**Framework**: Ollama (JSON prompting experiments)
 
 **Test Cases**:
 - "Click the login button" → `{"action": "click", "selector": "..."}`
@@ -53,6 +61,7 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 4: Playwright Integration Basics
 **Goal**: Understand browser automation capabilities
+**Framework**: Playwright + TypeScript (no AI integration yet)
 
 **Tasks**:
 - Set up basic Playwright project
@@ -64,6 +73,7 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 5: Multi-modal Integration
 **Goal**: Combine vision + DOM analysis
+**Framework**: Ollama API + Playwright (HTTP integration)
 
 **Test Scenarios**:
 - Screenshot + simplified DOM structure
@@ -75,6 +85,7 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 
 ## Spike 6: Performance & Optimization
 **Goal**: Optimize for real-time browser automation
+**Framework**: Evaluate llama.cpp or Transformers (direct integration)
 
 **Areas to Explore**:
 - Quantization impact on accuracy vs speed
