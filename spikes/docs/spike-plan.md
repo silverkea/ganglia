@@ -26,14 +26,14 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 **Framework**: Ollama (easy model switching for comparison)
 
 **Models to Test**:
-- Phi-3.5-Vision (4.2B)
-- LLaVA-Next-7B
-- LLaVA-Next-13B (if performance allows)
-- Llama 3.2-Vision 11B (if available)
-- MiniCPM-V 2.6 (efficiency focused)
-- CogVLM2 (GUI specialist)
-- InternVL 2.5 (vision benchmark leader)
-- LLaVA-OneVision (latest iteration)
+- Phi-3 Vision (4.2B) - `ollama pull phi3:vision`
+- LLaVA (7B) - `ollama pull llava`
+- LLaVA (13B) - `ollama pull llava:13b` (if performance allows)
+- Llama 3.2-Vision (11B) - `ollama pull llama3.2-vision` ✓ (already downloaded)
+- MiniCPM-V (8B) - `ollama pull minicpm-v`
+- Moondream (1.8B) - `ollama pull moondream` (ultra-fast baseline)
+- LLaVA-Phi3 (3.8B) - `ollama pull llava-phi3` (efficiency focused)
+- Qwen2.5-VL (7B) - `ollama pull qwen2.5vl:7b`
 
 **Test Scenarios**:
 - Simple web pages (login forms, buttons, menus)
@@ -92,6 +92,16 @@ Exploration spikes to evaluate SLMs and browser automation capabilities for the 
 - Context caching strategies
 - Batch processing possibilities
 - Memory usage patterns
+
+**Additional Models to Test** (Not available in Ollama):
+- CogVLM2 (GUI specialist) - `THUDM/cogvlm2-llama3-chat-19B` via Transformers
+- InternVL 2.5 (vision benchmark leader) - `OpenGVLab/InternVL2_5-8B` via Transformers
+- LLaVA-OneVision (latest iteration) - `lmms-lab/llava-onevision-*` via Transformers
+
+**Framework Comparison**:
+- Ollama vs Transformers (Python) vs llama.cpp vs vLLM
+- Setup complexity vs performance trade-offs
+- Model availability and quantization options
 
 **Success Criteria**: Achieve reasonable response times for interactive use
 

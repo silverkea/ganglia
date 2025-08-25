@@ -103,9 +103,17 @@ src/
 
 ## Git Workflow Instructions
 When the user asks to commit changes, perform the following sequence in a single command chain:
-1. `git add .` - Stage all changes
-2. `git commit -m "descriptive message"` - Commit with a detailed, descriptive message
-3. `git push` - Push to remote repository
+
+1. Navigate to workspace root if not already there. This is IMPORTANT.
+2. `git add .` - Stage all changes from the workspace root
+3. `git commit -m "descriptive message"` - Commit with a detailed, descriptive message
+4. `git push` - Push to remote repository
+
+Command pattern:
+```bash
+# Ensure we're at workspace root, then commit
+cd /path/to/workspace/root && git add . && git commit -m "message" && git push
+```
 
 Use clear, descriptive commit messages that explain:
 - What was changed
