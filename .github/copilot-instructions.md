@@ -112,7 +112,7 @@ When the user asks to commit changes, perform the following sequence in a single
 Command pattern:
 ```bash
 # Ensure we're at workspace root, then commit
-cd /path/to/workspace/root && git add . && git commit -m "message" && git push
+cd C:\code\personal\ganglia && git add . && git commit -m "message" && git push
 ```
 
 Use clear, descriptive commit messages that explain:
